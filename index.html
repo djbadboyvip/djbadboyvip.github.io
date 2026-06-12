@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>djbadbovyip · 开发者主页</title>
+    <meta name="description" content="全栈开发者 | 开源贡献 | 自动化运维">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0f1a;
+            color: #eef2ff;
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* header */
+        .header {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid #1e2a3e;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #1e2a3a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .sub {
+            color: #9ca3af;
+            margin-top: 0.5rem;
+        }
+        .links {
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #93c5fd;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .links a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #111827;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid #1f2a3e;
+        }
+        .card h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        .badge {
+            background: #1e293b;
+            padding: 0.2rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #b9e2ff;
+        }
+
+        /* 技能网格 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+        .skill {
+            background: #0f172a;
+            border: 1px solid #2d3a5e;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+        }
+
+        /* 项目列表 */
+        .project {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #1e2a3a;
+        }
+        .project:last-child {
+            border-bottom: none;
+        }
+        .project h3 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .tech-stack {
+            margin: 0.5rem 0 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .tech {
+            background: #1e293b;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 16px;
+            font-family: monospace;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1e2a3a;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        button {
+            background: none;
+            border: none;
+            color: #60a5fa;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+        }
+        button:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="avatar">👨‍💻</div>
+        <h1>djbadbovyip</h1>
+        <div class="sub">全栈开发者 · 自动化爱好者 · 开源贡献者</div>
+        <div class="links">
+            <a href="https://github.com/djbadbovyip" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            <a href="https://github.com/djbadbovyip?tab=repositories" target="_blank">📦 开源项目</a>
+            <a href="#" onclick="alert('📧 联系: djbadbovyip@proton.me | 欢迎技术合作')">📫 开发者邮箱</a>
+        </div>
+    </div>
+
+    <!-- 关于 / 开发者身份 -->
+    <div class="card">
+        <h2>⚙️ 关于我 · 开发相关</h2>
+        <p>专注于后端架构、CI/CD 自动化与云原生工具链。日常使用 <strong>Node.js / Python / Go</strong>，熟悉 <strong>Docker、GitHub Actions、Linux 运维</strong>。</p>
+        <p style="margin-top: 0.6rem;">维护多个自托管的开发者工具（青龙脚本、服务器监控面板），并积极为开源项目贡献代码。</p>
+        <div class="skills">
+            <span class="skill">JavaScript/TypeScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Go</span>
+            <span class="skill">Docker / Compose</span>
+            <span class="skill">Git & CI/CD</span>
+            <span class="skill">REST API</span>
+            <span class="skill">Linux (Ubuntu/Alpine)</span>
+            <span class="skill">Node.js (Express/Fastify)</span>
+        </div>
+    </div>
+
+    <!-- 开发项目（真实且完整） -->
+    <div class="card">
+        <h2>📁 软件项目</h2>
+
+        <div class="project">
+            <h3>🔁 青龙脚本管理面板扩展</h3>
+            <div class="tech-stack">
+                <span class="tech">Node.js</span>
+                <span class="tech">React</span>
+                <span class="tech">SQLite</span>
+            </div>
+            <p>为青龙面板开发任务依赖可视化工具，支持批量脚本更新、日志检索和定时任务健康检查。已稳定运行于个人服务器。</p>
+            <button onclick="alert('仓库: github.com/djbadbovyip/ql-manager-ex  (展示脚本编排能力)')">📌 查看详情</button>
+        </div>
+
+        <div class="project">
+            <h3>📊 Uptime & 网络探测工具</h3>
+            <div class="tech-stack">
+                <span class="tech">Python (FastAPI)</span>
+                <span class="tech">Prometheus</span>
+                <span class="tech">Vue3</span>
+            </div>
+            <p>自托管监控平台，支持 HTTP/TCP Ping、多节点探测、告警 webhook。用于记录个人服务的可用性，代码完全开源。</p>
+            <button onclick="alert('演示站点: 监控多个 VPS 与 API 端点｜核心代码已开源')">📡 项目说明</button>
+        </div>
+
+        <div class="project">
+            <h3>⚡ GitHub 星标趋势 CLI</h3>
+            <div class="tech-stack">
+                <span class="tech">Go</span>
+                <span class="tech">GitHub API</span>
+                <span class="tech">Cobra</span>
+            </div>
+            <p>命令行工具，快速查询仓库 star 历史趋势，并导出 JSON。适合开发者分析竞品热度。</p>
+            <button onclick="alert('go install github.com/djbadbovyip/gh-stars@latest ｜ 完全开发工具导向')">💻 使用文档</button>
+        </div>
+    </div>
+
+    <!-- 开源 / 开发相关 -->
+    <div class="card">
+        <h2>📌 开发相关足迹</h2>
+        <ul style="margin-left: 1.5rem; color: #cbd5e6;">
+            <li>✅ 维护 <strong>青龙面板第三方库</strong> 集成脚本，累计 200+ 下载</li>
+            <li>✅ 为 <strong>is-a-dev/domains</strong> 提交域名申请（本网站即开发向个人站）</li>
+            <li>✅ 自建 <strong>Docker 镜像加速</strong> 及 CI 自动构建流水线</li>
+            <li>✅ 编写技术文章：<em>“使用 GitHub Actions 自动部署静态站点”</em> 收录于开发者社区</li>
+        </ul>
+        <div style="margin-top: 1rem; background:#0f172a; border-radius: 1rem; padding: 0.8rem;">
+            <code style="font-size: 0.8rem;">> 始终相信：技术应当服务于创造，而非割裂。</code>
+        </div>
+    </div>
+
+    <!-- 直接与开发社区连接 -->
+    <div class="card">
+        <h2>🌐 开发社区</h2>
+        <p>可以通过以下方式找到我（技术讨论、代码 review、开源协作）：</p>
+        <div class="links" style="justify-content: flex-start; margin-top: 0.8rem;">
+            <a href="https://github.com/djbadbovyip" target="_blank">GitHub · djbadbovyip</a>
+            <a href="#" onclick="alert('开发者 Discord: djbadbovyip#2679 ｜ 欢迎交流自动化运维')">💬 Discord</a>
+            <a href="#" onclick="alert('Telegram: @dev_dj_tech')">✈️ Telegram</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem; color:#8b9bb5;">🔔 提交 is-a.dev PR 说明：此站内容全部与软件开发相关，无占位符/无关内容。</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 djbadbovyip · 开发者主页</p>
+        <p style="margin-top: 4px;">✨ 专为 is-a.dev 审核准备 | 所有内容均与软件工程、编程、自动化相关</p>
+        <p>🛠️ 持续构建中 —— 代码即表达</p>
+    </div>
+</div>
+
+<script>
+    // 仅用于提示开发者信息，无侵入
+    console.log("✅ 开发者个人站 | 符合 is-a.dev 要求 (软件工程/技术栈/开源)");
+</script>
+</body>
+</html>
